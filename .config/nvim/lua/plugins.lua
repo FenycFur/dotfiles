@@ -83,12 +83,14 @@ require("lazy").setup({
         keywordStyle = { italic = true},
         statementStyle = { bold = true },
         typeStyle = {},
-        transparent = false,         -- do not set background color
+        transparent = true,         -- do not set background color
         dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
         terminalColors = true,       -- define vim.g.terminal_color_{0,17}
         colors = {                   -- add/modify theme and palette colors
-            palette = {},
-            theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+          palette = {},
+          theme = {
+            wave = {}, lotus = {}, dragon = {}, all = {}
+          },
         },
         overrides = function(colors) -- add/modify highlights
             return {}
@@ -237,6 +239,11 @@ require("lazy").setup({
     build = "make",
     config = function()
       require('telescope').load_extension('fzf')
+    end
+  },
+  { "norcalli/nvim-colorizer.lua",
+    config = function()
+        require('colorizer').setup()
     end
   },
 })

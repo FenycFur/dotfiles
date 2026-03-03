@@ -35,6 +35,10 @@ vim.opt.wildmode = "list:longest"
 
 vim.opt.termguicolors = true
 
+-- Folds
+vim.opt.foldmethod = "indent"
+vim.opt.foldenable = false
+
 -- Mouse
 -- -- Scroll Speed
 opt.mousescroll = "ver:1,hor:1"

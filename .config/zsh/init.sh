@@ -35,8 +35,8 @@ source $ZSH_C/aliases.sh
 source $ZSH_C/keybinds.sh
 source $ZSH_C/nginx_shortcuts.sh
 
-#run setup scripts
-source $ZSH_C/scripts/python_venv.sh
+# Change python binary to user-manageable copy.
+# source $ZSH_C/scripts/python_venv.sh
 # FZF Fuzzy Search Setup
 source $ZSH_C/fzf_bindings.zsh
 
