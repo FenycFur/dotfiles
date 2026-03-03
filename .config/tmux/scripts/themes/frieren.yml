@@ -1,0 +1,36 @@
+---
+name: UltraViolet
+description: Purple & peach gradient theme
+colors:
+  status_bg: "#c7c5a6"
+  session_fg: "#ffffff"
+  session_bg: "#111111" #"#7c464b"
+  gradient:
+  - "#111111"
+  - "#7c464b"
+  # - "#792322"
+  # - "#310f0f"
+  # - "#111111"
+  - "#34565e"
+  - "#85a790"
+  - "#c7c5a6"
+  active_window_bg: "#a29070"
+  active_window_fg: black
+  inactive_window_bg: "#d4d0ca"
+  inactive_window_fg: "#202224"
+  status_right:
+    date_fg: "#d5d1cb"
+    date_bg: "#310f0f"
+    time_fg: "#c46f6e"
+    time_bg: "#1a0807"
+  pane_border: "#b25c5c"
+symbols:
+  separator_left: "◣"
+  separator_middle: "◣"
+  separator_right: "◢"
+  session_prefix: "["
+  session_suffix: "] "
+format:
+  status_right:
+    date: " %a %Y.%m.%d "
+    time: " %I:%M:%S "
